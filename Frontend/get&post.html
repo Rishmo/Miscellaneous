@@ -6,6 +6,21 @@
     <title>Get & Post</title>
 </head>
 <body>
-    
+    <h3>Get request form</h3>
+    <form method="get" action="http://localhost:8080/register"> <!-- form works on file protocol but we want http protocol becz our server runs there that's why used http -->
+        <input placeholder="enter username" name="username" type="text" />
+        <input placeholder="enter password" name="pass" type="password" />
+        <button>Submit</button>
+    </form>
+
+    <br><br>
+    <hr>
+    <br><br>
+    <h3>Post request form</h3>
+    <form method="post" action="http://localhost:8080/register">
+        <input placeholder="enter username" name="username" type="text" />
+        <input placeholder="enter password" name="pass" type="password" />
+        <button>Submit</button>
+    </form>
 </body>
 </html>
